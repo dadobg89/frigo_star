@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Frigo Star</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,700italic,400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">    
+    	/* javascript za prikaz dugmeta - povratak na vrh - u donjem desnom uglu */
+    	$(document).ready(function() {
+    		$(window).on("scroll", function() {
+    			var odVrha = $(window).scrollTop();
+    			$("#topLink").toggleClass("down", (odVrha > 300));
+    		});
+    	});
+    		
+    </script>
+
+
+    <script type="text/javascript">
+    	/* javascript za postepeni (smooth scroll) - ovaj deo koda je sa sajta css-tricks */
+    	$(function() {
+    	  $('a[href*=#]:not([href=#])').click(function() {
+    	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+    	      var target = $(this.hash);
+    	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    	      if (target.length) {
+    	        $('html,body').animate({
+    	          scrollTop: target.offset().top
+    	        }, 1000);
+    	        return false;
+    	      }
+    	    }
+    	  });
+    	});
+    </script>
+
+
+    <script>
+    /* javascript za dinamički prikaz navigacije (sakrivanje/prikazivanje) na mobilnim uređajima */
+    	
+    $(document).ready(function() {
+    		
+    	var respmenu 		= $('#respmenu');
+    	var	menu 			= $('#nav>ul');
+
+    	$(respmenu).on('click', function(e) {
+    		e.preventDefault();
+    		menu.slideToggle();
+    	});
+    	
+    	$(window).resize(function(){
+    		var sirina = $(window).width();
+    		if(sirina > 768 && menu.is(':hidden')) {
+    			menu.removeAttr('style');
+    		}	
+    	});
+
+    });	
+    	
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+	<header id="header" class="negativ">
+    
+        <div class="wrapper">
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+            
+           
+            <nav id="nav">
+                <ul>
+                    <li><a href="#prvi" class="dugme">Početna</a></li>
+                    <li><a href="#drugi" class="dugme">Proizvodi</a></li>
+                    <li><a href="#contact" class="dugme">Kontakt</a></li>
+                </ul>
+                <a href="#" id="respmenu">Prikaži/sakrij navigaciju</a>
+            </nav>
+            
+            
+            
+        </div>
+    </header>
+
+	<section id="prvi" class="negativ">
+    	<div class="wrapper">
+        	<h1>Proizvodnja termičkih i rashladnih vitrina</h1>
+        	<p><a href="#" class="dugme">Neko&nbsp;dugme&nbsp;&raquo;</a></p>
+        </div> <!-- wrapper -->
+    </section>
+    
+    <section id="drugi">
+    	
+        <div class="wrapper">
+        
+            <h2>Frigo Star</h2>
+            <p>Vaše je da poželite, a mi ćemo ispuniti Vaše želje.</p>
+            <p>"Frigo - Star" se bavi proizvodnjom profesionalnih:
+                <br><br>
+                <ul>
+                    <li>Rashladnih uređaja</li>
+                    <li>Termičkih uređaja</li>
+                    <li>Neutralne opreme</li>
+                </ul>
+                <br>
+                <p>koja se koristi u mesarskoj industriji, ugostiteljstvu i trgovinama.</p>
+            <p>Iskustvo, preciznost, profesionalnost, prilagodljivost željama kupaca, kratki rokovi  isporuke rezultiraju visokim kvalitetom naših proizvoda.</p>
+        
+            <article class="tri">
+            <a href="termicki.html">
+                <img src="images/r6.jpg" alt="tri1">
+                <div class="triTekst">
+                
+                	<h2>Termički uređaji</h2>
+                	<p>Program termičkih uređaja obuhvata električne, plinske i kombinovane šporete, pećnice, pizza peći, friteze i roštilje.</p>
+                </div> <!-- triTekst -->
+            </a>
+            </article> <!-- tri -->
+        
+            <article class="tri">
+            <a href="rashladni.html">
+                <img src="images/tipc.jpg" alt="tri2">
+                <div class="triTekst">
+                	<h2>Rashladni uređaji</h2>
+                	<p>Program rashladnih uredaja obuhvata proizvodnju rashladnih vitrina, ormana, šankova, stolova, vinskih ormana i komora.</p>
+                </div> <!-- triTekst -->
+            </a>
+            </article> <!-- tri -->
+        
+            <article class="tri">
+            <a href="neutralna.html">
+                <img src="images/tipD.jpg" alt="tri3">
+                <div class="triTekst">
+                	<h2>Neutralna oprema</h2>
+                	<p>Program neutralnih elemenata obuhvata proizvodnju radnih stolova, gornjih kuhinjskih elemenata, polica i sudopera.</p>
+                </div> <!-- triTekst -->
+            </a>
+            </article> <!-- tri -->
+            
+            <article class="tri">
+            <a href="termika.html">
+                <img src="images/r7.jpg" alt="tri3">
+                <div class="triTekst">
+                    <h2>Termika</h2>
+                    <p>Program neutralnih uređaja obuhvata proizvodnju radnih stolova, neutralnih stolova, gornjih kuhinjskih elemenata, polica i sudopera.</p>
+                </div> <!-- triTekst -->
+            </a>
+            </article> <!-- tri -->
+            
+        </div> <!-- wrapper -->
+        
+    </section>
+    
+    
+
+    <section id="idea" class="negativ">
+    	<div class="wrapper">
+            <img src="images/sijalica.png" alt="lightbulb" id="sijalica">
+            <h2>New idea!</h2>
+             <p class="negativ">Rešili ste da otvorite ugostiteljski objekat ili da renovirate već postojeći - ali niste sigurni šta Vam tačno treba.<br>
+             Na pravom ste mestu - Frigo Star će se pobrinuti za sve Vaše želje i potrebe.</p>
+         </div> <!-- wrapper -->
+    </section>
+    
+    
+
+	<section id="contact">
+         <a href="#"></a>
+        <div class="wrapper" class="left">
+            <h2>Kontakt podaci</h2>
+            <h4>Frigo'Star doo</h4>
+            <p>Rumska 65, Dobrinci (opština Ruma) Srbija.</p>
+            <p>
+                <i class="fa fa-phone" aria-hidden="true"></i>+ 381 (0) 64/9874-580 <br>
+                <i class="fa fa-envelope"></i>  frigostar01@gmail.com
+            </p>
+            <h4>Sertifikati:</h4>
+            <ul>
+                <li><i class="fa fa-shield"></i><a href="https://www.eurostandard.rs/"> ISO 9001:2008</a></li>
+                <li><i class="fa fa-shield"></i><a href="https://www.eurostandard.rs/iso-14001-sistemi-menadzmenta-zastitom-zivotne-sredine/"> 14001:2008</a></li>
+                <li><i class="fa fa-shield"></i><a href="https://www.eurostandard.rs/sta-je-haccp/"> HACCP</a></li>
+            </ul>
+            <p><a href="form.html" class="dugme">Kontakt&raquo;</a></p>
+        </div> <!-- wrapper -->
+         
+    </section>
+    
+    
+    
+    <footer id="footer" class="negativ">
+    	<p class="negativ">Copyright &copy; 2017 Frigo-Star by Misha</p>
+    </footer>
+    
+    
+    <a href="#header" id="topLink">Nazad na vrh</a>
+    
+
+</body>
+</html>
+
+
+
+

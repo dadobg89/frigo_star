@@ -1,0 +1,463 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:#E3F9FE;
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	margin:0 0 0.5em;
+}
+h2, h4 {
+	color: #2073D7;
+}
+img {
+	max-width:100%;
+}
+
+p {
+	margin:0 0 0.5em;
+	color: #2073D7;
+}
+
+.negativ {
+	color:#fff;
+}
+
+
+a:link,
+a:visited {
+	color:#2073D7;
+	text-decoration:none;
+}
+a:hover {	color:#326aae;}
+
+
+.negativ a:link,
+.negativ a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+.negativ a:hover {	color:#FFF;}
+
+
+.wrapper {
+	width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	clear: both;
+}
+
+
+
+#header {
+	background:#2073D7;
+	height:80px;
+	padding:20px;
+}
+
+.logo {
+	float:left;
+	background: rgba(9, 65, 134, 0);
+    border: 2px solid #2073D7;
+    border-radius: 25px;
+    color: #2073D7;
+    display: inline-block;
+    padding: 18px 10px 2px 15px;
+}
+
+#nav {
+	float:right;
+}
+#nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#nav ul li {
+	float:left;
+}
+
+.elementi li {
+	display: inline;
+}
+
+#elementi {
+	width:250px;
+	height:200px;
+	float:left;
+}
+#elementi:nth-of-type(n) {
+	margin-left: 28px;
+}
+#elementi:nth-of-type(4n) {
+	margin-right:0;
+}
+
+
+.dugme {
+	background: rgba(9, 65, 134, 0);
+    border: 2px solid #2073D7;
+    border-radius: 25px;
+    color: #2073D7;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 10px 24px 9px;
+	margin:24px 5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.dugme:hover {
+	background: rgba(9, 65, 134, 1);
+	color:#fff;
+}
+
+
+.negativ .dugme {
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.negativ .dugme:hover {
+	background: rgba(255, 255, 255, 1);
+    color: #2073D7;
+}
+
+
+
+#prvi {
+	background:url(../images/4.jpg) center center no-repeat;
+	background-size:cover;
+	text-align:center;
+	padding:220px 0;
+	color:#fff;
+}
+
+#prvi h1 {
+	font-size:60px;
+	margin-bottom:20px;
+}
+
+
+
+#drugi {
+	padding:100px 0;
+	text-align:center;
+	overflow:hidden;
+}
+#drugi_uredjaji {
+	padding: 10px;
+	text-align:center;
+	overflow:hidden;
+}
+
+
+/* kod za 4 articla */
+.tri {
+	width:250px;
+	height:200px;
+	position:relative;
+	overflow:hidden;
+	margin:40px 20px 0;
+	float:left;
+}
+.tri:nth-of-type(n) {
+	margin-left: 28px;
+}
+.tri:nth-of-type(4n) {
+	margin-right:0;
+}
+
+.triTekst {
+	position:absolute;
+	left:0;
+	top:300px;
+	padding:25px;
+	width:200px;
+	height:200px;
+	background:rgba(255,255,255,0.3);
+    transition: all 0.6s ease;
+}
+
+.tri:hover .triTekst {
+	top:0;
+	background:rgba(255,255,255,0.8);
+}
+
+
+/* kod za 3 articla */
+/* .tri {
+	width:350px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	margin:40px 75px 0 0;
+	float:left;
+}
+
+.tri:nth-of-type(3n) {
+	margin-right:0;
+}
+
+.triTekst {
+	position:absolute;
+	left:0;
+	top:350px;
+	padding:25px;
+	width:300px;
+	height:250px;
+	background:rgba(255,255,255,0.3);
+    transition: all 0.6s ease;
+}
+
+.tri:hover .triTekst {
+	top:0;
+	background:rgba(255,255,255,0.8);
+} */
+
+
+
+
+
+
+
+#contact {
+	background:url(../images/about.jpg) center center no-repeat;
+	background-size:cover;
+	padding:120px 0;
+}
+
+#contact .left {
+	float: left;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul li {
+	color: #2073D7;
+}
+
+
+#footer {
+	background:#2073D7;
+	padding:20px 0;
+	text-align:center;
+	font-size:12px;
+}
+
+
+
+#topLink {
+	display:inline-block;
+	position:fixed;
+	bottom:-100px;
+	right:50px;
+	color:#fff;
+	background:#2073D7;
+	padding:10px;
+    transition: all 0.2s ease;
+    border-radius: 25px;
+}
+
+#topLink:hover {
+	color:#2073D7;
+	background:#fff;
+}
+
+#topLink.down {
+	bottom:0;
+}
+
+
+
+
+
+
+
+
+#idea {
+	background:#2073D7;
+	padding:20px;
+	overflow:hidden;
+}
+
+
+
+
+#sijalica {
+	float:left;
+	margin-right:50px;
+	-webkit-animation: sijalica 2s infinite;
+	-moz-animation: sijalica 2s infinite;
+	-o-animation: sijalica 2s infinite;
+	animation: sijalica 2s infinite;
+}
+/* dodate su prefiks varijante animacije zbog nekih starijih browsera */
+
+@-webkit-keyframes sijalica {
+ 0% {	 opacity:0; }
+ 30% {	 opacity:0.7; }
+ 40% {	 opacity:0.3; }
+ 50% {	 opacity:1; }
+ 90% {	 opacity:1; }
+ 100% {	 opacity:0; }
+}
+
+@-moz-keyframes sijalica {
+ 0% {	 opacity:0; }
+ 30% {	 opacity:0.7; }
+ 40% {	 opacity:0.3; }
+ 50% {	 opacity:1; }
+ 90% {	 opacity:1; }
+ 100% {	 opacity:0; }
+}
+
+@-o-keyframes sijalica {
+ 0% {	 opacity:0; }
+ 30% {	 opacity:0.7; }
+ 40% {	 opacity:0.3; }
+ 50% {	 opacity:1; }
+ 90% {	 opacity:1; }
+ 100% {	 opacity:0; }
+}
+
+@keyframes sijalica {
+ 0% {	 opacity:0; }
+ 30% {	 opacity:0.7; }
+ 40% {	 opacity:0.3; }
+ 50% {	 opacity:1; }
+ 90% {	 opacity:1; }
+ 100% {	 opacity:0; }
+}
+
+
+
+
+
+
+/* responsive i menu*/
+
+#respmenu {
+	display:none;
+}
+
+@media screen and (min-width:1024px) and (max-width:1260px) {
+	.wrapper {
+		width:960px;
+	}
+	.tri {
+		width:300px;
+		height:257px;
+		margin-right:30px;
+	}
+	.triTekst {
+		top:257px;
+		width:250px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.wrapper {
+		width:680px;
+	}
+	.tri { /* vracamo sve u normalni tok za ovu rezoluciju */
+		width:auto;
+		height:auto;
+		margin:40px 0;
+		padding:0;
+		float:none;
+		background:#eee;
+	}
+	.tri img {
+		float:left;
+	}
+	.triTekst {
+		position:relative;
+		transition:none;
+		top:0;
+		left:0;
+		float:right;
+		width:270px;
+	}
+}
+@media screen and (max-width:767px) {
+	.wrapper {
+		width:80%;
+	}
+	#header {
+		text-align:center;
+		height:auto;
+	}
+	#nav,
+	.logo {
+		float:none;
+	}
+	#nav ul li {
+		float:none;
+	}
+	#nav ul li a {
+		display:block;
+		margin:7px 5px;
+	}
+	#respmenu {
+		display:block;
+		background:rgba(255,255,255,0.1);
+		padding:10px;
+    	border-radius: 25px;
+	}
+	#nav ul {
+		display:none;
+	}
+	.tri { /* vracamo sve u normalni tok za ovu rezoluciju */
+		width:auto;
+		height:auto;
+		margin:40px 0;
+		padding:0;
+		float:none;
+		background:#eee;
+	}
+	.tri img {
+		float:none;
+	}
+	.triTekst {
+		position:relative;
+		transition:none;
+		top:0;
+		left:0;
+		float:right;
+		width:auto;
+		height:auto;
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
