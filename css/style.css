@@ -82,22 +82,6 @@ a:hover {	color:#326aae;}
 	float:left;
 }
 
-.elementi li {
-	display: inline;
-}
-
-#elementi {
-	width:250px;
-	height:200px;
-	float:left;
-}
-#elementi:nth-of-type(n) {
-	margin-left: 28px;
-}
-#elementi:nth-of-type(4n) {
-	margin-right:0;
-}
-
 
 .dugme {
 	background: rgba(9, 65, 134, 0);
@@ -153,14 +137,8 @@ a:hover {	color:#326aae;}
 	text-align:center;
 	overflow:hidden;
 }
-#drugi_uredjaji {
-	padding: 10px;
-	text-align:center;
-	overflow:hidden;
-}
 
-
-/* kod za 4 articla */
+/* kod za 4 articla na pocetnoj strani*/
 .tri {
 	width:250px;
 	height:200px;
@@ -193,7 +171,7 @@ a:hover {	color:#326aae;}
 }
 
 
-/* kod za 3 articla */
+/* kod za 3 articla na pocetnoj strani */
 /* .tri {
 	width:350px;
 	height:300px;
@@ -443,16 +421,12 @@ ul li {
 }
 
 
+/* naknadno sam dodavao */
 
-
-
-
-
-
-
-
-
-
+.slider_h2 {
+	text-align: center;
+	margin: 20px;
+}
 
 
 
