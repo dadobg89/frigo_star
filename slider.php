@@ -37,6 +37,8 @@ switch ($_GET['elements']) { // switch sluzi za generisanje naslova
     <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 
 
+<li></li><img src="">
+
 <div class="wrapper">
 	<article class="slider">
 		<h2 class="slider_h2"><?php echo $naslov ?></h2>
@@ -48,9 +50,6 @@ switch ($_GET['elements']) { // switch sluzi za generisanje naslova
 		   ?>
 		</ul>
 	</article>
-
-
-
 
 	<section id="drugi">
 		<a href="slider.php?elements=termički" class="dugme">termički urađaji</a>

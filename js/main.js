@@ -3,4 +3,6 @@ $(document).ready(function(){
     mode: 'fade',
     captions: true
   });
+
+  
 });
